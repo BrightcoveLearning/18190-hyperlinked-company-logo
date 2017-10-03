@@ -1,0 +1,17 @@
+/*Set the size and position of the logo*/
+#companyLogo {
+  margin-top: 3px;
+  margin-right: 4px;
+  width: 85px;
+  height: 22px;
+}
+/*Set the size of the logo image*/
+#companyLogo img {
+  width: 85px;
+  height: 22px;
+}
+/*Set the size of the player*/
+.video-js {
+  width: 640px;
+  height: 338px;
+}
