@@ -6,19 +6,19 @@
   <title>Company Logo Sample</title>
   <style type="text/css">
 	  /*Set the size and position of the logo*/
-		#companyLogo {
-			margin-top: 3px;
+    #companyLogo {
+    	margin-top: 3px;
       margin-right: 4px;
-			width: 85px;
-			height: 22px;
-		}
-		/*Set the size of the logo image*/
-		#companyLogo img {
-			width: 85px;
-			height: 22px;
-		}
-		/*Set the size of the player*/
-		.video-js {
+    	width: 85px;
+    	height: 22px;
+    }
+    /*Set the size of the logo image*/
+    #companyLogo img {
+    	width: 85px;
+    	height: 22px;
+    }
+    /*Set the size of the player*/
+    .video-js {
       width: 640px;
       height: 338px;
     }
@@ -27,49 +27,49 @@
 
 <body>
   <video id="myPlayerID"
-	  data-video-id="4845798282001"
-		data-account="1752604059001"
-		data-player="default"
-		data-embed="default"
-		data-application-id
-		class="video-js"
-		controls></video>
-	<script src="//players.brightcove.net/1752604059001/default_default/index.min.js"></script>
+    data-video-id="4845798282001"
+  	data-account="1752604059001"
+  	data-player="default"
+  	data-embed="default"
+  	data-application-id
+  	class="video-js"
+  	controls></video>
+  <script src="//players.brightcove.net/1752604059001/default_default/index.min.js"></script>
 
   <!-- custom script -->
   <script type="text/javascript">
     videojs("myPlayerID").ready(function() {
 	  // Create variables along with new div, anchor and image for logo icon
-      var myPlayer = this,
-        controlBar,
-		    newElement = document.createElement('div'),
-        newLink = document.createElement('a'),
-		    newImage = document.createElement('img');
+    var myPlayer = this,
+      controlBar,
+      newElement = document.createElement('div'),
+      newLink = document.createElement('a'),
+      newImage = document.createElement('img');
 
 			// Assign id and class to div for logo icon
-			newElement.id = 'companyLogo';
-			newElement.className = 'vjs-control';
+      newElement.id = 'companyLogo';
+      newElement.className = 'vjs-control';
 
       // Uncomment next line to see the newly created company logo div element
 			//console.log("button: ",newElement);
 
-			// Assign property to div element
-			newImage.setAttribute('src','http://solutions.brightcove.com/bcls/assets/images/bc-logo-white.png');
-			// Assign properties to a element
-			newLink.setAttribute('href','http://www.brightcove.com');
-			// Uncomment next line to open link in a new browser tab
-			//newLink.setAttribute('target', '_blank');
-			// Add img element to parent a element
-			newLink.appendChild(newImage);
-			// Add a element to parent div element
-			newElement.appendChild(newLink);
+      // Assign property to div element
+      newImage.setAttribute('src','http://solutions.brightcove.com/bcls/assets/images/bc-logo-white.png');
+      // Assign properties to a element
+      newLink.setAttribute('href','http://www.brightcove.com');
+      // Uncomment next line to open link in a new browser tab
+      //newLink.setAttribute('target', '_blank');
+      // Add img element to parent a element
+      newLink.appendChild(newImage);
+      // Add a element to parent div element
+      newElement.appendChild(newLink);
 
-			// Get control bar
+      // Get control bar
       // Remember that getElementsByClassName() returns an array
       controlBar = document.getElementsByClassName('vjs-control-bar')[0];
 
-			// Insert the logo icon to the end of the control bar elements
-			controlBar.appendChild(newElement);
+      // Insert the logo icon to the end of the control bar elements
+      controlBar.appendChild(newElement);
     });
   </script>
 
