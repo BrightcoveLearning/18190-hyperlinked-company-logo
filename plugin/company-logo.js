@@ -13,9 +13,9 @@ videojs.registerPlugin('companyLogo', function() {
   //console.log("button: ",newElement);
 
   // Assign property to div element
-  newImage.setAttribute('src','http://solutions.brightcove.com/bcls/assets/images/bc-logo-white.png');
+  newImage.setAttribute('src','https://solutions.brightcove.com/bcls/assets/images/bc-logo-white.png');
   // Assign properties to a element
-  newLink.setAttribute('href','http://www.brightcove.com');
+  newLink.setAttribute('href','https://www.brightcove.com');
   // Uncomment next line to open link in a new browser tab
   //newLink.setAttribute('target', '_blank');
   // Add img element to parent a element

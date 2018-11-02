@@ -26,19 +26,19 @@
 </head>
 
 <body>
-  <video id="myPlayerID"
+  <video-js id="myPlayerID"
     data-video-id="4845798282001"
   	data-account="1752604059001"
   	data-player="default"
   	data-embed="default"
   	data-application-id
   	class="video-js"
-  	controls></video>
-  <script src="//players.brightcove.net/1752604059001/default_default/index.min.js"></script>
+  	controls></video-js>
+  <script src="https://players.brightcove.net/1752604059001/default_default/index.min.js"></script>
 
   <!-- custom script -->
   <script type="text/javascript">
-    videojs("myPlayerID").ready(function() {
+    videojs.getPlayer('myPlayerID').ready(function() {
 	  // Create variables along with new div, anchor and image for logo icon
     var myPlayer = this,
       controlBar,
@@ -54,9 +54,9 @@
 			//console.log("button: ",newElement);
 
       // Assign property to div element
-      newImage.setAttribute('src','http://solutions.brightcove.com/bcls/assets/images/bc-logo-white.png');
+      newImage.setAttribute('src','https://solutions.brightcove.com/bcls/assets/images/bc-logo-white.png');
       // Assign properties to a element
-      newLink.setAttribute('href','http://www.brightcove.com');
+      newLink.setAttribute('href','https://www.brightcove.com');
       // Uncomment next line to open link in a new browser tab
       //newLink.setAttribute('target', '_blank');
       // Add img element to parent a element
